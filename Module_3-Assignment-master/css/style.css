@@ -1,0 +1,329 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color:#ECE96D;
+	font-family: oxygen;
+	font-family: 'Oxygen', sans-serif;
+	width: 100% !important; 
+}
+
+a{
+	text-decoration:none !important; 
+}
+
+header{
+	color: #fff;
+}
+
+body nav{
+	background-color: white;
+}
+
+body li a:hover{
+	font-weight: bold; !important;
+
+}
+
+#header-nav{
+	background-color: #064978;
+	border-radius: 0;
+	border:0;
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	color: #557c3e;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+.navber-brand p{
+	color: #000;
+	text-transform: uppercase;
+	font-size: .7em;
+	margin-top: 15px;
+}
+.navbar-brand p span{
+vertical-align:  middle; 
+}
+
+.container li a{
+	color: black;
+}
+
+.collapsable-nav{
+	width: 500px;
+}
+button{
+	margin-right: 0;
+	float: right;
+	margin-right: 20px;
+	margin-top: -30px;
+	text-align: right;
+}
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a{
+	text-align: left;
+	color: #ECE96D ;
+	font-size: 22px;
+	font-weight: 250;
+	text-align: center;
+	text-shadow: 0 10px 10px black;
+}
+
+#nav-list a:hover {
+	background: #3B94D3;
+}
+#nav-list a span{
+	font-size: 1.4em;
+}
+
+#phone{
+	margin-top: 5px;
+}
+
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+}
+#phone div {
+	text-align: right;
+	color: red;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 2px solid #ECE96D;
+}
+
+.navbar-header button.navbar-toggle {
+	clear: both;
+	margin-top: -50px;
+}
+/************Header End************/
+
+.panel-footer {
+	color: white;
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+}
+.panel-footer div.row {
+	margin-bottom: 35px;
+}
+#hours, #address {
+	line-height: 2;
+}
+#hours > span, #address > span {
+	font-size: 1.3em;
+}
+#address p {
+	color: red;
+	font-size: .8em;
+	line-height: 1.8
+}
+#terms {
+	font-style: italic;
+}
+#terms p:nth-child(2) {
+	margin-top: 25px;
+}
+/********END FOOTER**********/
+
+
+
+
+
+/******Start Home Page******/
+.our-menu {
+	margin-bottom: 40px;
+	margin-top: 40px;
+	font-size: 28px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: underline;
+	word-spacing: .4em;
+	letter-spacing: .1em;
+	text-shadow: 0 2px 2px blue;
+}
+
+
+#beef, #chicken, #sushi {
+	border: 2px solid #064978;
+	background-color: #CED136;
+	font-family: sans-serif;
+	margin-bottom: 30px;
+	color: white;
+}
+
+#beef section, #chicken section, #sushi section {
+	font-weight: 600;
+	font-size: 26px;
+	margin-bottom: 30px;
+}
+
+#beef div, #chicken div, #sushi div {
+	font-size: 18px;
+	line-height: 1.2em;
+	text-align: center;
+}
+
+#beef > div, #chicken > div, #sushi > div {
+	padding: 10px;
+}
+
+#beef:hover, #chicken:hover, #sushi:hover {
+	box-shadow: 0 2px 5px black;
+} 
+/******End Home Page******/
+
+/**********Large devices*************/
+@media (min-width: 1200px) {
+   .container .jumbotron{
+   	background-image: url('../images/fant/fant_pic1200.jpg');
+   	height: 700px;
+   	box-shadow: 0 10px 50px black;
+   	border: 2px solid  #064978;
+   }
+}
+
+/**********Medium devices*************/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+   .container .jumbotron{
+   	background-image: url('../images/fant/fant_pic992.jpg');
+   	height: 500px;
+   	box-shadow: 0 10px 50px black;
+   	border: 2px solid  #064978;
+   }
+}
+
+/**********Small devices*************/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron{
+    height: 300px;	
+   	background-image: url('../images/fant/fant_pic768.jpg');
+   	background-repeat: no-repeat;
+   	height: 700px;
+   	box-shadow: 0 10px 50px black;
+   	border: 2px solid  #064978;
+   }
+}
+
+/**********Extra small devices*************/
+@media (max-width: 767px) {
+  .navbar-brand {
+  	padding-top: 10px;
+  	height: 80px;
+  }
+  .navbar-brand h1 {
+    padding-top: 10px;
+    font-size: 5vw;
+  }
+  .navbar-brand p {
+  	text-transform: uppercase;
+  	font-size: .6em;
+  	margin-top: 12px;
+  }
+  .navbar-brand p img {
+  	height: 20px;
+  } 
+  #collapsable-nav a{
+  	font-size: 1.2em;
+  }
+  #collapsable-nav a span {
+  	font-size: 1em;
+  }
+
+  #xs-deliver {
+  	margin-top: 5px;
+  	font-size: .7em;
+  	letter-spacing: .1em;
+  	text-transform: uppercase;
+  }
+  /*END HEADER */
+
+  /* FOOTER */
+  .panel-footer section {
+  	margin-bottom: 30px;
+  	text-align: center;
+  }
+
+  .panel-footer section:nth-child(3) {
+  	margin-bottom: 0;
+  }
+
+  .panel-footer section hr {
+  	width: 50%;
+  }
+  /** END FOOTER **/
+
+  /* HOME PAGE */
+  .container .jumbotron {
+  	margin-top: 30px;
+  	padding: 0;
+  	box-shadow: 0 10px 50px black;
+  	border: 2px solid #064978;
+  }
+  #menu-tile, #specials-tile {
+  	width: 300px;
+  	margin: 0 auto 15px auto ;
+  }
+}
+
+/*******Super Extra Small Devices******/
+@media(max-width: 479px){
+	#navbar-brand h1 {
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	#menu-tile, #specials-tile {
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+}
+
+#call-btn {
+	border: 2px solid white;
+	width: 95%;
+	margin: auto;
+	font-size: 16px;
+	border-radius: 5px;
+	margin-top: -10px;
+}
+
+#call-btn a:hover {
+	background-color: #3B94D3;
+}
+
+#xs-deliver {
+	font-size: 12px;
+	color: red;
+	font-weight: bold;
+}
+
+#call-btn a {
+	width: 100%;
+	font-size: 22px;
+	font-weight: 600;
+	color: #ECE96D;
+	background-color: #064978;
+}
+
+#call-btn span {
+	margin-right: 10px;
+}
